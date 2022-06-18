@@ -1,0 +1,22 @@
+<div class="home">
+  <div class="home_images">
+    <img src="../../assets/images/background.png" v-if="$i18n.locale == 'ar'" />
+    <img src="../../assets/images/backgroundEn.png" v-if="$i18n.locale == 'en'" />
+
+    <div  :class="[$i18n.locale == 'en' ? 'home__content' : 'home__content__ar']">
+      <p class="title">{{$t('LAUNCHING')}}</p>
+      <p class="desc">{{$t('EXCITED')}}</p>
+
+      <div class="contact_us">
+        <p class="contact">{{$t('LEAVE')}}</p>
+
+        <div class="input_data" :class="[success ? 'section' : '']">
+          <input type="text" :placeholder="$t('EMAIL')" v-model="email"/>
+          <button @click="notifyMe">{{$t('NOTIFY')}}</button>  
+        </div>
+        <p style="color: green;" v-if="success">{{ $t('SUCESS.success') }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

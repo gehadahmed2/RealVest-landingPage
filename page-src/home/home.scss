@@ -1,0 +1,104 @@
+.home {
+    // background: url('../../assets/images/background.png');
+    background-color: #fff;
+
+    .home_images {
+        position: relative;
+
+        img {
+            position: relative;
+
+            width: 100%;
+        }
+
+    }
+
+    .home__content {
+        position: absolute !important;
+        top: 20%;
+        left: 20%;
+
+        .title {
+            font-weight: 600;
+            font-size: 42px;
+            color: #181448;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 22px;
+            color: #FF772A;
+            text-align: center;
+        }
+    }
+
+    .home__content__ar {
+        position: absolute !important;
+        top: 14%;
+        right: 20%;
+
+        .title {
+            font-weight: 600;
+            font-size: 42px;
+            color: #181448;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 22px;
+            color: #FF772A;
+            text-align: center;
+        }
+
+        .input_data {
+            direction: rtl;
+        }
+
+    }
+
+    .contact_us {
+        margin-top: 20px;
+        text-align: center;
+
+        .contact {
+            color: #003097;
+            font-size: 18px;
+        }
+
+        .input_data {
+            input[type="text"] {
+                width: 312px;
+                height: 40px;
+                background: #FFFFFF;
+                border: 1px solid #E4EBFC;
+                border-radius: 12px;
+                color: #7E95C6;
+                padding: 0px 10px;
+                outline: 0;
+            }
+
+            button {
+                width: 93px;
+                height: 40px;
+                background: #457AED;
+                border-radius: 12px;
+                color: #fff;
+                outline: 0;
+                border: 1px solid #457AED;
+                cursor: pointer;
+            }
+        }
+
+        .section {
+            display: none;
+        }
+    }
+
+}
+
+.arabic-body {
+    .home__content {
+        background-color: red;
+        right: 20%;
+    }
+}

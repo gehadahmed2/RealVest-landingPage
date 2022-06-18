@@ -1,0 +1,15 @@
+<div class="header" :class="[ $i18n.locale == 'en' ? 'header' : 'header__ar']">
+    <div class="tabs">
+        <a href="#">{{$t('HOW_IT_WOEK')}}</a>
+        <a href="#">{{$t('ABOUT')}}</a>
+        <a href="#">{{$t('CONTACT')}}</a>
+    </div>
+
+    <div class="logo">
+        <img src="../../../assets/images/logo.png" />
+    </div>
+
+    <div class="lang">
+        <LangToggel />
+    </div>
+</div>

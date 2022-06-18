@@ -1,0 +1,12 @@
+<div class="langToggle__container">
+    <div class="langToggle__btn" @click="toggleLanguage">
+        <img src="../../../assets/images/united kingdom.png" v-if="$i18n.locale == 'en'"/>
+        <img src="../../../assets/images/egypt.png" v-if="$i18n.locale == 'ar'"/>
+        <p>{{$t('english')}}</p>
+        <img src="../../../assets/images/arrow.png" />
+    </div>
+
+    <!-- <div id="myDropdown" class="langToggle__dropdownContent"  v-if="toggle">
+        arabic
+    </div> -->
+</div>
