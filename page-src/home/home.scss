@@ -18,11 +18,18 @@
         top: 20%;
         left: 20%;
 
+        @media(max-width:700px) {
+            left: 6%;
+        }
+
         .title {
             font-weight: 600;
             font-size: 42px;
             color: #181448;
             text-align: center;
+            @media(max-width:700px) {
+                font-size: 30px;
+            }
         }
 
         .desc {
@@ -36,6 +43,10 @@
         position: absolute !important;
         top: 14%;
         right: 20%;
+        @media(max-width:700px) {
+            right: 8%;
+            left: 10%;
+        }
 
         .title {
             font-weight: 600;
@@ -86,6 +97,9 @@
                 outline: 0;
                 border: 1px solid #457AED;
                 cursor: pointer;
+                @media(max-width:700px) {
+                    margin-top: 10px;
+                }
             }
         }
 

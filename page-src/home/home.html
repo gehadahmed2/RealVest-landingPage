@@ -14,8 +14,9 @@
           <input type="text" :placeholder="$t('EMAIL')" v-model="email"/>
           <button @click="notifyMe">{{$t('NOTIFY')}}</button>  
         </div>
-        <p style="color: green;" v-if="success">{{ $t('SUCESS.success') }}</p>
       </div>
+      <p style="color: green; text-align: center;" v-if="success">{{ $t('SUCESS.success') }}</p>
+
     </div>
 
   </div>
