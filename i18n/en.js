@@ -6,7 +6,7 @@ export default {
   ABOUT: "ABOUT RV",
   HOW_IT_WOEK: " HOW IT WORKS",
   LAUNCHING: "LAUNCHING SOON",
-  EXCITED: "We are just excited as you are!",
+  EXCITED: "We're just as excited as you are!",
   LEAVE: "Leave your contact to get notified",
   NOTIFY: "Notify me",
   EMAIL: "Email address",

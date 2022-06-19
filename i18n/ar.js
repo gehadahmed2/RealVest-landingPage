@@ -3,13 +3,13 @@ export default {
   english: "العربية",
   arabic: "",
   CONTACT: "تواصل معنا",
-  ABOUT: "عننا",
-  HOW_IT_WOEK: "كيف تعمل",
-  LAUNCHING: "قريبا",
-  EXCITED: "نحن متحمسون مثلك",
-  LEAVE: "اترك جهة الاتصال الخاصة بك ليتم إعلامك",
-  NOTIFY: "إخطرنى",
-  EMAIL: "عنوان البريد الالكترونى",
+  ABOUT: "عن RV",
+  HOW_IT_WOEK: "كيف تعمل RV",
+  LAUNCHING: "قريباً",
+  EXCITED: "استعد الآن",
+  LEAVE: "سجل بريدك الالكتروني الآن",
+  NOTIFY: "سجل",
+  EMAIL: "البريد الالكتروني",
   SUCESS:{
     success:"تم إرسال البريد الإلكتروني بنجاح ، وسنخطرك قريبًا"
   }

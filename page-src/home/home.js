@@ -11,7 +11,9 @@ export default {
   data() {
     return {
       email: null,
-      success: null
+      success: null,
+      screenWidth:'',
+      checkEmail:null
     }
   },
 
@@ -22,6 +24,7 @@ export default {
           "email": this.email,
         }).then((response) => {
           this.success = response.data
+          this.checkEmail =  response.data?.email[0]
           console.log(response, this.success,"response")
 
         })
@@ -31,5 +34,16 @@ export default {
         console.log(e, "error")
       }
     }
+  },
+  mounted() {
+    this.screenWidth = screen.width
+  },
+  watch:{
+    success:function(){
+      this.notifyMe()
+    },
+    checkEmail:function(){
+      this.notifyMe()
+    },
   }
 }
