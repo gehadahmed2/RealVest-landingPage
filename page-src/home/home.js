@@ -13,24 +13,31 @@ export default {
       email: null,
       success: null,
       screenWidth:'',
-      checkEmail:null
+      checkEmail:null,
+      flag:false
     }
   },
 
   methods: {
     notifyMe() {
+      this.flag = true
+
       try {
         axios.post('https://web.marsworkers.com/mail', {
           "email": this.email,
         }).then((response) => {
+          if(response.data?.email){
+            this.flag = false
+
+          }
           this.success = response.data
           this.checkEmail =  response.data?.email[0]
-          console.log(response, this.success,"response")
 
         })
 
 
       } catch (e) {
+        this.flag = false
         console.log(e, "error")
       }
     }
@@ -38,12 +45,4 @@ export default {
   mounted() {
     this.screenWidth = screen.width
   },
-  watch:{
-    success:function(){
-      this.notifyMe()
-    },
-    checkEmail:function(){
-      this.notifyMe()
-    },
-  }
 }

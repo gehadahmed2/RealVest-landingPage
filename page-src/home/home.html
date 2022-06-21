@@ -14,7 +14,7 @@
 
         <div class="input_data" :class="[success && !checkEmail ? 'section' : '']">
           <input type="text" :placeholder="$t('EMAIL')" v-model="email"/>
-          <button @click="notifyMe">{{$t('NOTIFY')}}</button>  
+          <button @click="notifyMe" :disabled="flag" :class="{ 'disabled-button': flag }">{{$t('NOTIFY')}}</button>  
         </div>
       </div>
       <p style="color: green; text-align: center;" v-if="success && !checkEmail">{{ $t('SUCESS.success') }}</p>
