@@ -3,7 +3,7 @@ import en from './i18n/en'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'RV',
+    title: 'RealVest',
     htmlAttrs: {
       lang: 'en'
     },

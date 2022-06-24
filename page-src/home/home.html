@@ -18,7 +18,7 @@
         </div>
       </div>
       <p style="color: green; text-align: center;" v-if="success && !checkEmail">{{ $t('SUCESS.success') }}</p>
-      <p style="color: red; text-align: center;" v-if=" checkEmail ">{{checkEmail}}</p>
+      <p style="color: red;" v-if=" checkEmail " class="checkemail">{{checkEmail}}</p>
 
       
 
